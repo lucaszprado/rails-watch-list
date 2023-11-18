@@ -1,5 +1,10 @@
-<h1>Add a new List</h1>
-<%= simple_form_for @list do |f|%>
-  <%= f.input :name%>
-  <%= f.submit %>
-<% end %>
+<div class='container mt-2'>
+  <h1>Add a new List</h1>
+  <div class='w-50'>
+    <%= simple_form_for @list do |f|%>
+    <%= f.input :name%>
+    <%= f.input :image_url%>
+    <%= f.submit %>
+  <% end %>
+  </div>
+</div>
